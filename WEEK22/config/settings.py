@@ -40,6 +40,7 @@ DJANGO_APPS = [
 
 MY_APP = [
     'User',
+    'Task',
 ]
 
 THIRD_PARTY_APPS = [
