@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title_page %}loging{% endblock %}
+{% block col_senter %} "col-10" {% endblock %}
+{% block col_rghit %} "col-1" {% endblock %}
+{% block col_left %} "col-1" {% endblock %}
+
+{% block center_col %}
+    <h2>برای استفاده از برنامه حتما باید ورود یا ثبت نام کنید!!!</h2>
+    <a href="{% url 'login-page' %}"><button type="button" class="btn btn-success">loging</button></a>
+
+    <a href="{% url 'register-page' %}"><button type="button" class="btn btn-primary">register</button></a>
+{% endblock %}
+
+r

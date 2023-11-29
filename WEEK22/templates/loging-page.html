@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title_page %}loging{% endblock %}
+{% block col_senter %} "col-4" {% endblock %}
+{% block col_rghit %} "col-4" {% endblock %}
+{% block col_left %} "col-4" {% endblock %}
 
-</body>
-</html>
+{% block center_col %}
+
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">ایمیل</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    <div id="emailHelp" class="form-text">از ایمیل برای ورود استفاده کنید</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">رمز ورود</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">loging</button>
+</form>
+{% if messages %}
+  <ul>
+      {% for message in messages %}
+    <li>{{ message }} </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% endblock %}

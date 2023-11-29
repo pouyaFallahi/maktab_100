@@ -27,4 +27,4 @@ class Task(models.Model):
     tag_id = models.ManyToManyField(Tag, blank=True, related_name='tag')
 
     def __str__(self):
-        return f'{self.task_title} - {self.task_description[:15]}...'
+        return f'{self.task_title} - {self.task_description[:15]}... -{self.category_id.category_name}'

@@ -13,15 +13,17 @@
         <br>
         <div class="container text-center">
           <div class="row">
-            <div class="col-1">
+            <div class={% block col_rghit %} "col-1" {% endblock %}>
+                {% block right_col %} {% endblock %}
 
 
             </div>
-            <div class="col-10">
+            <div class={% block col_senter %} "col-10" {% endblock %}>
                 {% block center_col %} {% endblock %}
             </div>
             </div>
-            <div class="col-1">
+            <div class={% block col_left %} "col-1" {% endblock %}>
+                {% block left_col %} {% endblock %}
 
             </div>
           </div>

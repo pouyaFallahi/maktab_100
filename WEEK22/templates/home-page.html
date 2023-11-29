@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title_page %} Home Page {% endblock %}
+{% block title_page %}Home-Page{% endblock %}
 
 {% block center_col %}
     <table class="table table-striped">
@@ -22,8 +22,10 @@
                 <td> {{ item.task_description }} </td>
                 <td> {{ item.category_id }} </td>
                 <td> {{ item.tag_id }} </td>
+
             </tr>
-        {% endfor %}
+{% endfor %}
+
     </tbody>
   </table>
 {% endblock %}
