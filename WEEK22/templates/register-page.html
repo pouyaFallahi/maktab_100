@@ -1,3 +1,12 @@
 {% extends 'base.html' %}
 {% block title_page %} register {% endblock %}
 
+{% block center_col %}
+
+<form method="post">
+    {% csrf_token %}
+{{ form_register }}'
+    <button type="submit"> ثبت نام</button>
+</form>
+
+{% endblock %}

@@ -14,12 +14,12 @@
             <a class="nav-link active" aria-current="page" href="{% url 'homePage' %}">صفحه اصلی</a>
             <a class="nav-link" href="{% url 'login-page' %}">ورود</a>
             <a class="nav-link" href="{% url 'register-page' %}">ثبت نام</a>
-                <a class="nav-link" href="{% url 'git-hub' %}">درباره ما</a>
+                <a class="nav-link" href=" https://github.com/pouyaFallahi?tab=overview&from=2023-11-01&to=2023-11-28 ">درباره ما</a>
           </div>
         </div>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="جست و جو" aria-label="Search">
+        <form class="d-flex" role="search" action="{% url 'search' %}">
+          <input class="form-control me-2" type="search" placeholder="جست و جو" aria-label="Search" name="search_box">
           <button class="btn btn-outline-success" type="submit">
 
             <img src="{% static 'Task/serch.png' %}" alt="Logo" width="30" height="30">
